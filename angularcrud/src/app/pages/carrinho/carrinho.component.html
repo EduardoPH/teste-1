@@ -1,1 +1,30 @@
-<p>carrinho works!</p>
+<section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="produtos-lista">
+        <div class="produto">
+            <img src="images/tenis.avif" alt="Tênis Nike">
+            <h3>Tênis Nike</h3>
+            <p>R$ 499,99</p>
+            <button onclick="adicionarAoCarrinho('Tênis Nike', 499.99)">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="images/adidas.avif" alt="Tênis Adidas">
+            <h3>Tênis Adidas</h3>
+            <p>R$ 399,99</p>
+            <button onclick="adicionarAoCarrinho('Tênis Adidas', 399.99)">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="images/mizuno.png" alt="Tênis Mizuno">
+            <h3>Tênis Puma</h3>
+            <p>R$ 449,99</p>
+            <button onclick="adicionarAoCarrinho('Tênis Puma', 449.99)">Comprar</button>
+        </div>
+    </div>
+</section>
+
+<section id="carrinho">
+    <h2>Seu Carrinho</h2>
+    <div id="lista-carrinho"></div>
+    <p id="total">Total: R$ 0,00</p>
+    <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
+</section>

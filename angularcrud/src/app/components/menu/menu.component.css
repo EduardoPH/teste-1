@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #000000, #217dc9);
+    color: #333;
+}
+
+header {
+    background-color: #217dc9;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,1 +1,63 @@
-<p>admin-insere works!</p>
+<div class="sidebar">
+    <h4>Gerenciamento de Estoque</h4>
+    <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Relatórios</a></li>
+    </ul>
+</div>
+<div class="content">
+    <h2>Controle de Estoque</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Adicionar Produto</h4>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nome do Produto</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Quantidade</label>
+                    <input type="number" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success">Adicionar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h4>Remover Produto</h4>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nome do Produto</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Quantidade</label>
+                    <input type="number" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-danger">Remover</button>
+            </form>
+        </div>
+    </div>
+    <h4 class="mt-4">Estoque Atual</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>50</td>
+                <td><button class="btn btn-sm btn-warning">Editar</button></td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>30</td>
+                <td><button class="btn btn-sm btn-warning">Editar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
