@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
-import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem.component';
-import { PessoaFormComponent } from './pages/pessoa-form/pessoa-form.component';
-import { PessoaLoginComponent } from './pages/pessoa-login/pessoa-login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
+import { CalcadosMasculinoComponent } from './pages/calcados-masculino/calcados-masculino.component';
+import { AdminInsereComponent } from './pages/admin-insere/admin-insere.component';
 
 export const routes: Routes = [
     {
@@ -11,23 +12,23 @@ export const routes: Routes = [
         title: 'Home',
     },
     {
-        path: 'pessoas',
-        component: PessoaListagemComponent,
-        title: 'Pessoas',
-    },
-    {
-        path: 'pessoas/incluir',
-        component: PessoaFormComponent,
-        title: 'Pessoas - Incluir',
-    },
-    {
-        path: 'pessoas/alterar/:id',
-        component: PessoaFormComponent,
-        title: 'Pessoas - Alterar',
-    },
-    {
-        path: 'pessoas/login',
-        component: PessoaLoginComponent,
+        path: 'login',
+        component: LoginComponent,
         title: 'Login',
+    },
+    {
+        path: 'carrinho',
+        component: CarrinhoComponent,
+        title: 'carrinho',
+    },
+    {
+        path: 'Calcados',
+        component: CalcadosMasculinoComponent,
+        title: 'Calcados',
+    },
+    {
+        path: 'admin',
+        component: AdminInsereComponent,
+        title: 'admin',
     },
 ];
