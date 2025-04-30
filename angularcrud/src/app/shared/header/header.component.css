@@ -1,0 +1,18 @@
+.mat-toolbar{
+    margin-bottom: 10px;
+    }
+    .spacer {
+    /* ocupa o espaço restante na toolbar disponível */
+    flex: 1 1 auto;
+    }
+    .logo-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 0 12px;
+    }
+    .logo-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+    .logo-button mat-icon {
+    margin-right: 4px;
+    }

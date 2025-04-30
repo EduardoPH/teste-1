@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+    <!-- Home -->
+    <button mat-button class="logo-button"
+   routerLink="/">
+    <mat-icon fontIcon="home"></mat-icon>
+    <span>Olá Mundo</span>
+    </button>
+    <!-- Espaçador -->
+    <span class="spacer"></span>
+    <!-- Botões -->
+    <button mat-button
+   routerLink="/pessoas/incluir">Cadastro</button>
+    <button mat-raised-button
+   routerLink="/pessoas/login">Login</button>
+   <!-- Menu que abre opções -->
+ <button mat-icon-button [matMenuTriggerFor]="menu" arialabel="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+    <mat-icon>help_outline</mat-icon>
+    <span routerLink="/sobre">Ajuda</span>
+    </button>
+    <button mat-menu-item disabled>
+    <mat-icon>info_outline</mat-icon>
+    <span routerLink="/sobre">Sobre</span>
+    </button>
+    </mat-menu>
+   </mat-toolbar>
