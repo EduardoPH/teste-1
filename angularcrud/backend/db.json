@@ -16,11 +16,19 @@
   "produtos":[
     {
       "id":"1",
-      "nome":"Prod 1"
+      "nome":"Tênis de Treino Masculino"
     },
     {
       "id":"2",
-      "nome":"Produto 2"
+      "nome":"Tênis Nike Masculino"
+    },
+    {
+      "id":"3",
+      "nome":"Tênis Adidas Masculino"
+    },
+    {
+      "id":"4",
+      "nome":"Tênis Puma Masculino"
     }
   ]
 }
