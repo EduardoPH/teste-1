@@ -12,5 +12,15 @@
       "sobrenome": "Silva",
       "dtNascimento": "2005-01-11"
     }
+  ],
+  "produtos":[
+    {
+      "id":"1",
+      "nome":"Prod 1"
+    },
+    {
+      "id":"2",
+      "nome":"Produto 2"
+    }
   ]
 }
