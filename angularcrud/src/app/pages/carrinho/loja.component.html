@@ -2,8 +2,7 @@
   <h2>Nossos Produtos</h2>
   <div class="produtos-lista">
     <app-produto
-      *ngFor="let produto of produtos"
-      [nome]="produto.nome"
+      *ngFor="let produto of produtos; trackBy: 'id'" [id]="produto.id" [nome]="produto.nome"
       [preco]="produto.preco"
       [imagem]="produto.imagem"
       (adicionar)="adicionarAoCarrinho($event)">

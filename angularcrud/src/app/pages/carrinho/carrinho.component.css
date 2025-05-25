@@ -1,3 +1,5 @@
+/* src/app/carrinho/carrinho.component.css */
+/* Seu CSS original */
 #carrinho {
   background-color: #f8f8f8;
   padding: 20px;
@@ -44,5 +46,5 @@
 }
 
 #carrinho button:hover {
-  background-color: #a30000;
+  background-color: #aa0000;
 }
