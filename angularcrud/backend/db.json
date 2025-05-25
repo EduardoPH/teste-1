@@ -12,5 +12,23 @@
       "sobrenome": "Silva",
       "dtNascimento": "2005-01-11"
     }
+  ],
+  "produtos":[
+    {
+      "id":"1",
+      "nome":"Tênis de Treino Masculino"
+    },
+    {
+      "id":"2",
+      "nome":"Tênis Nike Masculino"
+    },
+    {
+      "id":"3",
+      "nome":"Tênis Adidas Masculino"
+    },
+    {
+      "id":"4",
+      "nome":"Tênis Puma Masculino"
+    }
   ]
 }

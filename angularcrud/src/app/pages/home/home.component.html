@@ -1,124 +1,152 @@
 <div class="content-container">
-    <app-menu></app-menu>
-    
-    <section id="home">
-        <h2>Bem-vindo à nossa loja de artigos esportivos!</h2>
-        <p>Aqui você encontra os melhores produtos para sua prática esportiva.</p>
-    </section>
+  <app-menu></app-menu>
+
+  <section id="home">
+    <h2>Bem-vindo à nossa loja de artigos esportivos!</h2>
+    <p>Aqui você encontra os melhores produtos para sua prática esportiva.</p>
 
     <section id="produtos" class="hidden">
-        <h2>Nossos Produtos</h2>
-        <div class="produtos-lista">
-            <div class="produto">
-                <img src="images/tenis.avif" alt="Tênis Nike">
-                <h3>Tênis Nike</h3>
-                <p>R$ 499,99</p>
-                <button onclick="adicionarAoCarrinho('Tênis Nike', 499.99)">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="images/adidas.avif" alt="Tênis Adidas">
-                <h3>Tênis Adidas</h3>
-                <p>R$ 399,99</p>
-                <button onclick="adicionarAoCarrinho('Tênis Adidas', 399.99)">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="images/mizuno.png" alt="Tênis Puma">
-                <h3>Tênis Puma</h3>
-                <p>R$ 449,99</p>
-                <button onclick="adicionarAoCarrinho('Tênis Puma', 449.99)">Comprar</button>
-            </div>
+      <h2>Nossos Produtos</h2>
+      <div class="produtos-lista">
+        <div class="produto">
+          <img src="../../../assets/images/headphone.png" alt="Tênis Nike" />
+          <h3>Tênis Nike</h3>
+          <p>R$ 499,99</p>
+          <button onclick="adicionarAoCarrinho('Tênis Nike', 499.99)">
+            Comprar
+          </button>
         </div>
+        <div class="produto">
+          <img src="images/adidas.avif" alt="Tênis Adidas" />
+          <h3>Tênis Adidas</h3>
+          <p>R$ 399,99</p>
+          <button onclick="adicionarAoCarrinho('Tênis Adidas', 399.99)">
+            Comprar
+          </button>
+        </div>
+        <div class="produto">
+          <img src="images/mizuno.png" alt="Tênis Puma" />
+          <h3>Tênis Puma</h3>
+          <p>R$ 449,99</p>
+          <button onclick="adicionarAoCarrinho('Tênis Puma', 449.99)">
+            Comprar
+          </button>
+        </div>
+      </div>
     </section>
 
     <section id="calçados-masculinos" class="hidden">
-        <h2>Calçados Masculinos</h2>
-        <div class="produtos-lista">
-            <div class="produto">
-                <img src="images/tenis-nike.jpg" alt="Tênis Nike Masculino">
-                <h3>Tênis Nike Masculino</h3>
-                <p>R$ 499,99</p>
-                <button onclick="adicionarAoCarrinho('Tênis Nike Masculino', 499.99)">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="images/adidas-masculino.jpg" alt="Tênis Adidas Masculino">
-                <h3>Tênis Adidas Masculino</h3>
-                <p>R$ 399,99</p>
-                <button onclick="adicionarAoCarrinho('Tênis Adidas Masculino', 399.99)">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="images/puma-masculino.jpg" alt="Tênis Puma Masculino">
-                <h3>Tênis Puma Masculino</h3>
-                <p>R$ 449,99</p>
-                <button onclick="adicionarAoCarrinho('Tênis Puma Masculino', 449.99)">Comprar</button>
-            </div>
+      <h2>Calçados Masculinos</h2>
+      <div class="produtos-lista">
+        <div class="produto">
+          <img src="images/tenis-nike.jpg" alt="Tênis Nike Masculino" />
+          <h3>Tênis Nike Masculino</h3>
+          <p>R$ 499,99</p>
+          <button onclick="adicionarAoCarrinho('Tênis Nike Masculino', 499.99)">
+            Comprar
+          </button>
         </div>
+        <div class="produto">
+          <img src="images/adidas-masculino.jpg" alt="Tênis Adidas Masculino" />
+          <h3>Tênis Adidas Masculino</h3>
+          <p>R$ 399,99</p>
+          <button
+            onclick="adicionarAoCarrinho('Tênis Adidas Masculino', 399.99)"
+          >
+            Comprar
+          </button>
+        </div>
+        <div class="produto">
+          <img src="images/puma-masculino.jpg" alt="Tênis Puma Masculino" />
+          <h3>Tênis Puma Masculino</h3>
+          <p>R$ 449,99</p>
+          <button onclick="adicionarAoCarrinho('Tênis Puma Masculino', 449.99)">
+            Comprar
+          </button>
+        </div>
+      </div>
     </section>
+  </section>
 
-    <section id="sobre" class="hidden">
-        <h2>Sobre a SportShop</h2>
-        <p>Somos uma loja especializada em artigos esportivos. Trabalhamos com as melhores marcas do mercado e
-            oferecemos produtos de qualidade para atletas e entusiastas.</p>
-    </section>
+  <section id="sobre" class="hidden">
+    <h2>Sobre a SportShop</h2>
+    <p>
+      Somos uma loja especializada em artigos esportivos. Trabalhamos com as
+      melhores marcas do mercado e oferecemos produtos de qualidade para atletas
+      e entusiastas.
+    </p>
+  </section>
 
-    <section id="contato" class="hidden">
-        <h2>Contato</h2>
-        <form action="#">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+  <section id="contato" class="hidden">
+    <h2>Contato</h2>
+    <form action="#">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
-            <button type="submit">Enviar</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="carrinho" class="hidden">
+    <h2>Seu Carrinho</h2>
+    <div id="lista-carrinho"></div>
+    <p id="total">Total: R$ 0,00</p>
+    <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
+  </section>
+
+  <section id="login" class="hidden">
+    <div class="container">
+      <div class="login-box">
+        <div class="logo-container">
+          <img src="images/imagem-PI-resized.png" alt="Logo" />
+        </div>
+
+        <h2>Entrar na sua conta</h2>
+
+        <form action="#" method="post">
+          <div class="input-container">
+            <label for="usuario">Usuário</label>
+            <input
+              type="text"
+              id="usuario"
+              name="usuario"
+              placeholder="Digite seu Usuário"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="********"
+              required
+            />
+          </div>
+
+          <button type="button" onclick="verificarLogin()">Entrar</button>
         </form>
-    </section>
 
-    <section id="carrinho" class="hidden">
-        <h2>Seu Carrinho</h2>
-        <div id="lista-carrinho"></div>
-        <p id="total">Total: R$ 0,00</p>
-        <button onclick="limparCarrinho()">Esvaziar Carrinho</button>
-    </section>
-
-    <section id="login" class="hidden">
-        <div class="container">
-            <div class="login-box">
-                <div class="logo-container">
-                    <img src="images/imagem-PI-resized.png" alt="Logo">
-                </div>
-
-                <h2>Entrar na sua conta</h2>
-
-                <form action="#" method="post">
-                    <div class="input-container">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu Usuário" required>
-                    </div>
-
-                    <div class="input-container">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" placeholder="********" required>
-                    </div>
-
-                    <button type="button" onclick="verificarLogin()">Entrar</button>
-                </form>
-
-                <div class="forgot-password">
-                    <a href="#">Esqueci minha senha</a>
-                </div>
-
-                <div class="register">
-                    <p>Não tem uma conta? <a href="#">Cadastrar-se</a></p>
-                </div>
-            </div>
+        <div class="forgot-password">
+          <a href="#">Esqueci minha senha</a>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 SportShop - Todos os direitos reservados</p>
-    </footer>
+        <div class="register">
+          <p>Não tem uma conta? <a href="#">Cadastrar-se</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SportShop - Todos os direitos reservados</p>
+  </footer>
 </div>
-

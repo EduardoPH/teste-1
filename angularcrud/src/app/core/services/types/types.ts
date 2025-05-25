@@ -4,3 +4,8 @@ export interface Pessoa {
     sobrenome: string,
     dtNascimento: string
 }
+
+export interface Produto{
+    id?: number,
+    nome: string
+}

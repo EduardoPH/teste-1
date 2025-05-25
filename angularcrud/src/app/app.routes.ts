@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 import { CalcadosMasculinoComponent } from './pages/calcados-masculino/calcados-masculino.component';
 import { AdminInsereComponent } from './pages/admin-insere/admin-insere.component';
+import { ProdutoFormComponent } from './pages/produto-form/produto-form.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,10 @@ export const routes: Routes = [
         path: 'admin',
         component: AdminInsereComponent,
         title: 'admin',
+    },
+    {
+        path: 'produtos',
+        component: ProdutoFormComponent,
+        title: 'Produtos',
     },
 ];
