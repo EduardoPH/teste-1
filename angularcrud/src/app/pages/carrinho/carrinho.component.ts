@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-carrinho',
-  standalone: true,
-  imports: [],
   templateUrl: './carrinho.component.html',
-  styleUrl: './carrinho.component.css'
+  styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent {
+  @Input() itens: { nome: string, preco: number }[] = [];
+  @Output() limpar = new EventEmitter<void>();
 
+  get total(): number {
+    return this.itens.reduce((acc, item) => acc + item.preco, 0);
+  }
+
+  esvaziarCarrinho() {
+    this.limpar.emit();
+  }
 }

@@ -1,0 +1,14 @@
+<section id="produtos">
+  <h2>Nossos Produtos</h2>
+  <div class="produtos-lista">
+    <app-produto
+      *ngFor="let produto of produtos"
+      [nome]="produto.nome"
+      [preco]="produto.preco"
+      [imagem]="produto.imagem"
+      (adicionar)="adicionarAoCarrinho($event)">
+    </app-produto>
+  </div>
+</section>
+
+<app-carrinho [itens]="carrinho" (limpar)="limparCarrinho()"></app-carrinho>
