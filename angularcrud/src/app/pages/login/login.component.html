@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Artigos Esportivos</title>
-    <link rel="icon" href="images/imagem-PI-resized.png" type="image/imagem-PI">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Sports</h1>
-            <img src="images/imagem-PI-resized.png" alt="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" id="link-home">Home</a></li>
-                <li><a href="#" id="link-produtos">Produtos</a></li>
-                <li><a href="#" id="link-sobre">Sobre</a></li>
-                <li><a href="#" id="link-contato">Contato</a></li>
-                <li><a href="login.html" id="link-login">Login</a></li>
-                <li><a href="#" id="link-calçados-masculinos">Calçados Masculinos</a></li>
-            </ul>
-        </nav>
-        <div class="cart-icon" id="link-carrinho" onclick="mostrarSeção('carrinho')">
-            🛒 <span id="quantidade-carrinho">0</span>
-        </div>
-    </header>
+
+    <app-header></app-header>
 
     <section id="home">
         <h2>Bem-vindo à nossa loja de artigos esportivos!</h2>
@@ -148,11 +121,3 @@
         <p>&copy; 2025 SportShop - Todos os direitos reservados</p>
     </footer>
 
-    <script src="script.js"></script>
-    <script>
-        document.getElementById("link-calçados-masculinos").addEventListener("click", function() {
-            mostrarSeção("calçados-masculinos");
-        });
-    </script>
-</body>
-</html>

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { MenuComponent } from '../../components/menu/menu.component';
-import { RouterLink } from '@angular/router';
+import { HeaderComponent } from '../../shared/header/header.component';
+
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [MenuComponent, RouterLink],
+  imports: [HeaderComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

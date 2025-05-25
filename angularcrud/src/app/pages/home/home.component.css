@@ -9,9 +9,7 @@ section {
     max-width: 800px; /* Limita a largura máxima da seção */
 }
 
-.hidden {
-    display: none;
-}
+
 
 footer {
     background-color: #333;
