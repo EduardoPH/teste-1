@@ -18,25 +18,25 @@
       "id": "1",
       "nome": "Tênis de Treino Masculino",
       "preco": 299.99,  
-      "imagem": "assets/images/tenis_treino_masculino.avif" 
+      "imagem": "assets/images/Air_Max_270.webp" 
     },
     {
       "id": "2",
       "nome": "Tênis Nike Masculino",
       "preco": 499.99,  
-      "imagem": "assets/images/tenis_nike_masculino.avif" 
+      "imagem": "assets/images/Air_Max_270.webp" 
     },
     {
       "id": "3",
       "nome": "Tênis Adidas Masculino",
       "preco": 399.99,  
-      "imagem": "assets/images/tenis_adidas_masculino.avif" 
+      "imagem": "assets/images/Air_Max_270.webp" 
     },
     {
       "id": "4",
       "nome": "Tênis Puma Masculino",
       "preco": 349.99,  
-      "imagem": "assets/images/tenis_puma_masculino.avif" 
+      "imagem": "assets/images/Air_Max_270.webp" 
     }
   ],
   "carrinho": [
