@@ -19,22 +19,23 @@ export class LoginComponent {
   senha = ''
   botaoDesabilitado: boolean = true;
 
-  constructor(private router:Router){ }
+  constructor(private router: Router) { }
 
   onBotaoClicado() {
+    console.log(this.login, this.senha);
+    if (this.login.trim() !== '' && this.senha.trim() !== '') {
 
-    if(this.login.trim() !== '' && this.senha.trim() !== ''){
-      
-      if(this.login == 'admin' && this.senha == '123'){
+      if (this.login == 'admin' && this.senha == '123') {
         alert(`Bem-vindo ${this.login} !`)
-        this.router.navigate(['/pessoas'])
-      }else{
+        localStorage.setItem('id_user', '1');
+        this.router.navigate(['/'])
+      } else {
         alert(`Dados Inválidos`)
       }
-      
+
     }
-    else{
+    else {
       alert(`Preencha ambos os campos!`)
     }
-}
+  }
 }

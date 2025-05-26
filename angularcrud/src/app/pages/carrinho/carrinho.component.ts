@@ -2,9 +2,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Produto } from '../../core/services/types/types'; // Importe a interface Produto
 import { MenuComponent } from '../../components/menu/menu.component';
+import { CarrinhoService } from '../../core/services/carrinho.service';
+import { catchError, of } from 'rxjs';
 
-// Se seu componente for standalone, descomente e adicione os imports necessários:
-// import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-carrinho',
@@ -14,5 +14,36 @@ import { MenuComponent } from '../../components/menu/menu.component';
   imports: [MenuComponent]
 })
 export class CarrinhoComponent {
- 
+  constructor(private carrinhoService: CarrinhoService) { }
+  carrinho: any[] = [];
+  numeroDeItensNoCarrinho: number = 0;
+
+  idUser: number = localStorage.getItem('id_user') ? parseInt(localStorage.getItem('id_user')!) : 1;
+
+  onAtualizarNumeroDeItensNoCarrinho(): void {
+    this.carrinhoService.buscarCarrinhoPeloIdDoUsuario(this.idUser).subscribe((carrinho: any[]) => {
+      this.numeroDeItensNoCarrinho = carrinho.length;
+      this.carrinho = carrinho.map(item => ({
+        ...item,
+        produto: item.produto || {}
+      }));
+    });
+  }
+  ngOnInit() {
+    const idUsuario = localStorage.getItem('id_user');
+    this.carrinhoService.buscarCarrinhoPeloIdDoUsuario(Number(idUsuario)).subscribe((carrinho) => {
+      this.carrinho = carrinho;
+      this.onAtualizarNumeroDeItensNoCarrinho();
+    });
+  }
+
+  removerDoCarrinho(idItemCarrinho: number): void {
+    if (!confirm(`Você tem certeza que deseja remover este item do carrinho?`)) return;
+    this.carrinho = this.carrinho.filter(item => item.id !== idItemCarrinho);
+    this.numeroDeItensNoCarrinho = this.carrinho.length;
+    this.carrinhoService.removerProdutoDoCarrinho(idItemCarrinho).subscribe(() => {
+      alert(`Item removido com sucesso!`);
+      this.onAtualizarNumeroDeItensNoCarrinho();
+    });
+  }
 }

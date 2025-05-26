@@ -6,7 +6,7 @@ export interface Pessoa {
 }
 
 export interface Produto {
-  id: string;
+  id: number;
   nome: string;
   preco: number;
   imagem: string;
