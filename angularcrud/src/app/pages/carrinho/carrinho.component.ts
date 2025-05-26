@@ -14,5 +14,7 @@ import { MenuComponent } from '../../components/menu/menu.component';
   imports: [MenuComponent]
 })
 export class CarrinhoComponent {
- 
+  ngOnInit(): void {
+    alert("Carrinho carregado com sucesso!");
+  }
 }
