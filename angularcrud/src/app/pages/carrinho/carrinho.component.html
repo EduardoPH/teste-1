@@ -1,6 +1,20 @@
 <section>
- <app-menu></app-menu>
+  <app-menu [numeroDeItensNoCarrinho]="numeroDeItensNoCarrinho"></app-menu>
   <div>
     <h2>Seu Carrinho</h2>
+
+    @for(itens of carrinho; track $index) {
+    <div class="item-carrinho">
+      <img src="{{ itens.produto.imagem }}" alt="{{ itens.produto.nome }}" />
+      <h3>{{ itens.produto.nome }}</h3>
+      <p>R$ {{ itens.produto.preco }}</p>
+      <button (click)="removerDoCarrinho(itens.id)"> 🗑 </button>
+    </div>
+    }
+
+    <div class="total">
+      <h3>R$ {{valorTotal}} </h3>
+
+    </div>
   </div>
 </section>

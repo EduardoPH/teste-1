@@ -17,63 +17,38 @@
     {
       "id": "1",
       "nome": "Tênis de Treino Masculino",
-      "preco": 299.99,  
-      "imagem": "assets/images/Air_Max_270.webp" 
+      "preco": 299.99,
+      "imagem": "assets/images/Air_Max_270.webp"
     },
     {
       "id": "2",
       "nome": "Tênis Nike Masculino",
-      "preco": 499.99,  
-      "imagem": "assets/images/Air_Max_270.webp" 
+      "preco": 499.99,
+      "imagem": "assets/images/Air_Max_270.webp"
     },
     {
       "id": "3",
       "nome": "Tênis Adidas Masculino",
-      "preco": 399.99,  
-      "imagem": "assets/images/Air_Max_270.webp" 
+      "preco": 399.99,
+      "imagem": "assets/images/Air_Max_270.webp"
     },
     {
       "id": "4",
       "nome": "Tênis Puma Masculino",
-      "preco": 349.99,  
-      "imagem": "assets/images/Air_Max_270.webp" 
+      "preco": 349.99,
+      "imagem": "assets/images/Air_Max_270.webp"
     }
   ],
-  "carrinho": [
-    {
-      "id": 1,
-      "id_user": 1,
-      "name": "Nike Air Max 270",
-      "price": 150
-    },
-    {
-      "id": 2,
-      "id_user": 1,
-      "name": "Adidas Ultraboost",
-      "price": 180
-    },
-    {
-      "id": 3,
-      "id_user": 2,
-      "name": "Puma RS-X",
-      "price": 120
-    },
-    {
-      "id": 4,
-      "id_user": 2,
-      "name": "Reebok Classic",
-      "price": 100
-    }
-  ],
+  "carrinho": [],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "email": "",
       "password": "123456"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jane Smith",
       "email": "",
       "password": "abcdef"

@@ -1,12 +1,14 @@
-
 section {
-    padding: 2rem 1rem; /* Usando rem para melhor responsividade */
+    padding: 2rem 1rem;
+    /* Usando rem para melhor responsividade */
     text-align: center;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    margin: 1rem auto; /* Margem automática para centralizar */
-    max-width: 800px; /* Limita a largura máxima da seção */
+    margin: 1rem auto;
+    /* Margem automática para centralizar */
+    max-width: 800px;
+    /* Limita a largura máxima da seção */
 }
 
 
@@ -40,8 +42,10 @@ footer a:hover {
     padding: 1rem;
     margin: 1rem;
     text-align: center;
-    width: calc(30% - 2rem); /* Ajusta a largura para permitir margens */
-    min-width: 250px; /* Define uma largura mínima para os produtos */
+    width: calc(30% - 2rem);
+    /* Ajusta a largura para permitir margens */
+    min-width: 250px;
+    /* Define uma largura mínima para os produtos */
 }
 
 .produto img {
@@ -63,7 +67,8 @@ footer a:hover {
     background-color: #1e88e5;
     color: white;
     border: none;
-    padding: 0.5rem 1rem; /* Usando rem para melhor responsividade */
+    padding: 0.5rem 1rem;
+    /* Usando rem para melhor responsividade */
     cursor: pointer;
     border-radius: 5px;
 }
@@ -75,7 +80,8 @@ footer a:hover {
 .btn-login {
     background-color: black;
     color: white;
-    padding: 0.5rem 1rem; /* Usando rem para melhor responsividade */
+    padding: 0.5rem 1rem;
+    /* Usando rem para melhor responsividade */
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -92,12 +98,20 @@ footer a:hover {
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .produto {
-        width: calc(45% - 2rem); /* Ajusta a largura para telas menores */
+        width: calc(45% - 2rem);
+        /* Ajusta a largura para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .produto {
-        width: calc(100% - 2rem); /* Ajusta a largura para telas muito pequenas */
+        width: calc(100% - 2rem);
+        /* Ajusta a largura para telas muito pequenas */
     }
+}
+
+.actions-buttons {
+    display: flex;
+    height: 3em;
+    gap: 1rem;
 }
