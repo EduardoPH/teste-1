@@ -55,9 +55,5 @@ export class CarrinhoComponent {
       alert(`Item removido com sucesso!`);
       this.onAtualizarNumeroDeItensNoCarrinho();
     });
-
-  ngOnInit(): void {
-    alert("Carrinho carregado com sucesso!");
-
   }
 }
